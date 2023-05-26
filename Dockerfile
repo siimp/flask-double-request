@@ -1,6 +1,5 @@
 # podman build --tag my-flask:latest .
 # podman run -p 5000:5000 my-flask:latest
-# curl http://localhost:5000
 
 FROM python:3-alpine
 

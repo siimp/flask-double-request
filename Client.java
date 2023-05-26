@@ -9,7 +9,7 @@ class Client {
         URL url = new URL("http://localhost:5000");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
-        con.setReadTimeout(5000);
+        con.setReadTimeout(10000);
 
         try(BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()))) {
             in.readLine();
